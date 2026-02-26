@@ -1,0 +1,19 @@
+.inputBox {
+    border: 1px solid grey;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 1.75rem;
+    text-align: center;
+    margin: 1rem;
+}
+.decrement {
+    margin-right: 1.5rem;
+}
+button {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    background-color: #212121;
+    color: white;
+}
