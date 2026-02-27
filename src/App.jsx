@@ -9,6 +9,7 @@ function App() {
     <>
       <Header />
       <Form />
+      {/*<OutputColumn />*/} {/* Output column only for desktop view */}
     </>
   )
 }

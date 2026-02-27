@@ -1,4 +1,4 @@
-.inputBox {
+.inputBox, .inputSlide, #genderToggle {
     border: 1px solid grey;
     border-radius: 20px;
     width: fit-content;
@@ -6,14 +6,45 @@
     text-align: center;
     margin: 1rem;
 }
+.inputSlide {
+    width: 50vw;
+}
+input[type = "range"] {
+    width: 40vw;
+}
 .decrement {
     margin-right: 1.5rem;
 }
-button {
+.inputBox button {
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
     border: none;
     background-color: #212121;
     color: white;
+}
+.inputBox button:hover {
+    background-color: aliceblue;
+    color: #212121;
+    transition: .5s;
+}
+
+#container {
+    display: inline-block;
+    width: 7.5vw;
+    height: 5vh;
+    border-radius: 25px;
+    background-color: blue;
+}
+#dot {
+    width: 5vh;
+    height: 5vh;
+    position: relative;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+#calculateBMIBtn {
+    margin: 1vw;
+    padding: 1rem;
 }
