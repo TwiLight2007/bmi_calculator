@@ -35,25 +35,21 @@ function GenderToggle({ changeValue }) {
     )
 }
 
-function CalculateButton() {
-    return (
-        <button id = "calculateBMIBtn">Calculate BMI</button>
-    )
-}
-
-export default function Form() {
-    const [age, setAge] = useState(0)
-    const [weight, setWeight] = useState(0)
-    const [height, setHeight] = useState(160)
+export default function Form({ age, setAge, weight, setWeight, height, setHeight }) {
     const [gender, setGender] = useState("male")
 
     return (
-        <div>
-            <InputBox inputName = "Age (years)" inputValue = {age} changeValue = {setAge}/>
-            <InputBox inputName = "Weight (kg)" inputValue = {weight} changeValue = {setWeight}/>
-            <GenderToggle changeValue = {setGender} />
-            <InputSlide inputName = "Height (cm)" height = {height} changeValue = {setHeight} />
-            <CalculateButton />
+        <div id = "formFlex">
+            <div id = "ageWeightGenderContainer">
+                <div id = "ageWeightContainer">
+                    <InputBox inputName = "Age (years)" inputValue = {age} changeValue = {setAge}/>
+                    <InputBox inputName = "Weight (kg)" inputValue = {weight} changeValue = {setWeight}/>
+                </div>
+                <GenderToggle changeValue = {setGender} />
+            </div>
+            <div>
+                <InputSlide inputName = "Height (cm)" height = {height} changeValue = {setHeight} />
+            </div>
         </div>
     )
 }

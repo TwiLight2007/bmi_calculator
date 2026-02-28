@@ -7,10 +7,10 @@
     margin: 1rem;
 }
 .inputSlide {
-    width: 50vw;
+    width: auto;
 }
 input[type = "range"] {
-    width: 40vw;
+    width: auto;
 }
 .decrement {
     margin-right: 1.5rem;
@@ -37,6 +37,7 @@ input[type = "range"] {
     background-color: blue;
 }
 #dot {
+    transition: all .5s ease-in-out;
     width: 5vh;
     height: 5vh;
     position: relative;
@@ -47,4 +48,12 @@ input[type = "range"] {
 #calculateBMIBtn {
     margin: 1vw;
     padding: 1rem;
+}
+
+#formFlex {
+    display: flex;
+    flex-direction: column;
+}
+#ageWeightGenderContainer {
+    display: flex;
 }
