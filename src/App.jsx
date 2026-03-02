@@ -7,8 +7,8 @@ import Footer from './Footer.jsx'
 
 //article os just a short description of what BMI is all about
 function App() {
-  const [age, setAge] = useState(0)
-  const [weight, setWeight] = useState(0)
+  const [age, setAge] = useState(16)
+  const [weight, setWeight] = useState(60)
   const [height, setHeight] = useState(160)
 
   return (

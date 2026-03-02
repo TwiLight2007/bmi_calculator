@@ -17,7 +17,7 @@ function InputSlide({ inputName, height, changeValue }) {
         <div className = "inputSlide">
             <p className = "inputName">{inputName}</p>
             <p className = "inputValue">{height}</p>
-            <span>50 </span><input type = "range" min = "50" max = "300" onChange = {(e) => changeValue(Number(e.target.value))} /><span> 300</span>
+            <span>50 </span><input type = "range" min = "140" max = "210" value = {height} onChange = {(e) => changeValue(Number(e.target.value))} /><span> 300</span>
         </div>
     )
 }

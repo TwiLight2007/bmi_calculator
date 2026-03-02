@@ -3,4 +3,9 @@
 }
 #flexContainer {
     display: flex;
+    justify-content: space-evenly;
+}
+#output {
+    width: 33vw;
+    text-align: center;
 }
